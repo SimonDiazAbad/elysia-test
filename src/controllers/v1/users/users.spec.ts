@@ -5,8 +5,8 @@ import { app } from '~/index';
 
 const client = treaty(app);
 
-describe('Elysia', () => {
-  it('return a response', async () => {
+describe('users', () => {
+  it('get user by id', async () => {
     const id = 'abc123';
     const { data, error } = await client.api.v1
       .users({
