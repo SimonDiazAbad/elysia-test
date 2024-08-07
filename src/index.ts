@@ -1,6 +1,5 @@
 import { Elysia } from 'elysia';
 import { swagger } from '@elysiajs/swagger';
-import { routerV1 } from './controllers/v1';
 import { apiRouter } from './controllers';
 
 export const app = new Elysia()
