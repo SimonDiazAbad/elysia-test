@@ -3,7 +3,17 @@ import { swagger } from '@elysiajs/swagger';
 import { apiRouter } from './controllers';
 
 export const app = new Elysia()
-  .use(swagger())
+  .use(
+    swagger({
+      documentation: {
+        info: {
+          title: 'Elysia Test API',
+          description: 'Elysia Test API documentation.',
+          version: '1.0.0',
+        },
+      },
+    })
+  )
   .get('/health', () => 'OK')
   .use(apiRouter)
   .listen(3000);
