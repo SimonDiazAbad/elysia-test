@@ -3,7 +3,7 @@ import {
   GetUserByIdParamsSchema,
   GetUserByIdResponseSchema,
 } from './users.dto';
-import { getUserById } from '../../../modules/users';
+import { getUserById } from '~modules/users';
 
 export const userRoutes = new Elysia({
   prefix: '/users',

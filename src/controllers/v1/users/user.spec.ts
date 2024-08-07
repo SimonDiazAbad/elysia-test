@@ -1,7 +1,7 @@
 // test/index.test.ts
 import { describe, expect, it } from 'bun:test';
 import { treaty } from '@elysiajs/eden';
-import { app } from '../../../index';
+import { app } from '~/index';
 
 const client = treaty(app);
 
